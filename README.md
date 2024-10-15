@@ -28,37 +28,31 @@ it, simply add the following line to your Podfile:
 pod 'AppsOnAir-AppSync'
 ```
 ## Usages
- Write code in AppDelegate file if you want to start on app launch
+ Write code in AppDelegate file if you want to start on app launch.
 
 Swift Ui / Swift : 
 ```ruby
-AppsOnAirCore class object
-    let appsOnAirStateServices = AppsOnAirStateServices()
+    # AppsOnAirAppSync class object
+    let appOnAirSyncServices = AppSyncService()
 
-AppsOnAirCore common services Initialization
-      appsOnAirStateServices.sync(directory: ["showNativeUI":false]) { appUpdateData in
-          if appUpdateData["isMaintenance"] as! Int == 1 {
-              print("Maintenance \(String(describing: appUpdateData["isMaintenance"]))")
-          }
+    # AppsOnAirCore common services Initialization
+    appOnAirSyncServices.sync(directory: ["showNativeUI":false]) { appUpdateData in
+            # Write the code here when showNative UI is false
       }
 ```
 
 Objective C :
 ```ruby
 @interface AppDelegate ()
-@property (nonatomic, strong) AppsOnAirStateServices *appsOnAirStateServices;
+@property (nonatomic, strong) AppSyncService *appSyncService;
 @end
 
-
-    AppsOnAirServices Class instance create
-    self.appsOnAirStateServices = [[AppsOnAirStateServices alloc] init];
-
-   
-    AppsOnAirServices initialize for network and AppId
-    [self.appsOnAirStateServices syncWithDirectory:@{@"showNativeUI": @YES} completion:^(NSDictionary *appUpdateData) {
-        if ([appUpdateData[@"isMaintenance"] intValue] == 1) {
-            NSLog(@"Maintenance %@", appUpdateData[@"isMaintenance"]);
-        }
+    # App Sync Class instance create
+    self.appSyncService = [[AppSyncService alloc] init];
+    
+    #  Help to enable sync manager for app with directory for showNativeUi handling and completion method
+    [self.appSyncService syncWithDirectory:@{@"showNativeUI":@NO} completion:^(NSDictionary *appUpdate) {
+      #    Write the code here when showNative UI is false
     }];
 ```
 

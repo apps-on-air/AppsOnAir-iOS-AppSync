@@ -10,11 +10,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //MARK: - Declarations
         //AppsOnAir AppSync ios services Initialization
-        let appsOnAirStateService = AppSyncService()
+        let appOnAirSyncServices = AppSyncService()
 
         //MARK: - View Methods
         //Help to enable sync manager for app
-        appsOnAirStateService.sync(directory: ["showNativeUI":true]) { appUpdateData in
+        appOnAirSyncServices.sync(directory: ["showNativeUI":true]) { appUpdateData in
             //Write the code here when showNative UI is false
         }
         // Override point for customization after application launch.
