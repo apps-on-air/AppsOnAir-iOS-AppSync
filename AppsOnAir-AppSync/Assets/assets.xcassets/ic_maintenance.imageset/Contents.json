@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "maintenance_24X24.png",
+      "filename" : "maintenance_icon@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "maintenance_32X32.png",
+      "filename" : "maintenance_icon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "maintenance_64X64.png",
+      "filename" : "maintenance_icon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

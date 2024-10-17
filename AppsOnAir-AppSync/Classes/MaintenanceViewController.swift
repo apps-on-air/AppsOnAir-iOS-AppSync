@@ -11,14 +11,11 @@ class MaintenanceViewController: UIViewController {
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var updateButton: UIButton!
     @IBOutlet weak var maintenanceView: UIView!
+
     @IBOutlet weak var staticMaintenanceView: UIView!
-    @IBOutlet weak var customMaintenanceView: UIView!
-    @IBOutlet weak var maintenanceLogoImageView: UIImageView!
-    @IBOutlet weak var appTitleText: UILabel!
-    @IBOutlet weak var maintenanceTitleText: UILabel!
-    @IBOutlet weak var maintenanceReasonText: UILabel!
     @IBOutlet weak var staticMaintenanceImageView: UIImageView!
     @IBOutlet weak var staticMaintenanceText: UILabel!
+    @IBOutlet weak var staticMaintenanceDescText: UILabel!
     
     var updateDataDictionary : NSDictionary?
     
@@ -26,7 +23,7 @@ class MaintenanceViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.customMaintenanceView.isHidden = true
+
         self.staticMaintenanceView.isHidden = true
         self.updateView.isHidden = true
         self.maintenanceView.isHidden = true
@@ -55,18 +52,18 @@ class MaintenanceViewController: UIViewController {
             self.view.backgroundColor = UIColor(hex: "#00000080")
             self.maintenanceView.isHidden = false
             if let maintenanceData = self.updateDataDictionary?.value(forKey: "maintenanceData") as? NSDictionary {
-                self.customMaintenanceView.isHidden = false
-                self.staticMaintenanceView.isHidden = true
+                
+                self.staticMaintenanceView.isHidden = false
                 self.updateView.isHidden = true
-                self.appTitleText.text = Bundle.main.appName
+                
                 if let imageUrlStr = maintenanceData.value(forKey: "image") as? String,
                    let imageUrl = URL(string: imageUrlStr) {
                     // Use the valid image URL
-                    self.maintenanceLogoImageView.load(url: imageUrl)
+                    self.staticMaintenanceImageView.load(url: imageUrl)
                 } else {
                     // Use a default URL if the image URL is nil or invalid then set default icons
                     if let image = UIImage(named: "ic_maintenance", in: Bundle(for: type(of: self)), compatibleWith: nil) {
-                        self.maintenanceLogoImageView.image = image
+                        self.staticMaintenanceImageView.image = image
                     } else {
                         Logger.logInternal("Image not found")
                     }
@@ -75,25 +72,18 @@ class MaintenanceViewController: UIViewController {
                     self.maintenanceView.backgroundColor = UIColor(hex: bgColorCode)
                 }
                 if let titleText = maintenanceData.value(forKey: "title") as? String {
-                    self.maintenanceTitleText.text = titleText
+                    self.staticMaintenanceText.text = titleText
                 }
                 if let description = maintenanceData.value(forKey: "description") as? String {
-                    self.maintenanceReasonText.text = description
+                    self.staticMaintenanceDescText.text = description
                 }
                 if let textColor = maintenanceData.value(forKey: "textColorCode") as? String {
-                    self.maintenanceReasonText.textColor = UIColor(hex: textColor)
-                    self.maintenanceTitleText.textColor = UIColor(hex: textColor)
-                    self.appTitleText.textColor = UIColor(hex: textColor)
+                    self.staticMaintenanceDescText.textColor = UIColor(hex: textColor)
+                    self.staticMaintenanceText.textColor = UIColor(hex: textColor)
+                    
                 }
-                self.maintenanceTitleText.sizeToFit()
-                self.maintenanceReasonText.sizeToFit()
-            } else {
-                self.customMaintenanceView.isHidden = true
-                self.staticMaintenanceView.isHidden = false
-                self.updateView.isHidden = true
-                self.staticMaintenanceImageView.image = UIImage.appIcon
-                self.staticMaintenanceText.text = "\(Bundle.main.appName!) app is under maintenance"
                 self.staticMaintenanceText.sizeToFit()
+                self.staticMaintenanceDescText.sizeToFit()
             }
         } else if iosUpdate == true {
             if let updateData = self.updateDataDictionary?.value(forKey: "updateData") as? NSDictionary {
@@ -135,7 +125,6 @@ class MaintenanceViewController: UIViewController {
         } else {
             self.subTitleText.text = "An Update to \(Bundle.main.appName!) is available. Would you like to update ?"
         }
-        self.customMaintenanceView.isHidden = true
         self.staticMaintenanceView.isHidden = true
         self.updateView.isHidden = false
         self.maintenanceView.isHidden = true

@@ -26,6 +26,7 @@ public class AppSyncService : NSObject {
     
     /// display message while forgot to set showNativeUI in project
     private var errorMessage:String = "AppsOnAir APIKey is Not initialized for more details: \n https://documentation.appsonair.com" // !!!: Developer Guideline URL
+    
     //MARK: - Methods
     
     /// network status change handler

@@ -33,10 +33,10 @@ pod 'AppsOnAir-AppSync'
 Swift Ui / Swift : 
 ```ruby
     # AppsOnAirAppSync class object
-    let appOnAirSyncServices = AppSyncService()
+    let appOnAirSyncService = AppSyncService()
 
     # AppsOnAirCore common services Initialization
-    appOnAirSyncServices.sync(directory: ["showNativeUI":false]) { appUpdateData in
+    appOnAirSyncService.sync(directory: ["showNativeUI":false]) { appUpdateData in
             # Write the code here when showNative UI is false
       }
 ```
@@ -63,3 +63,6 @@ devtools-logicwind, devtools@logicwind.com
 ## License
 
 AppsOnAir-AppSync is available under the MIT license. See the LICENSE file for more info.
+
+## More Information  
+For more details, check out [this link](https://documentation.appsonair.com/) 
