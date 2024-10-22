@@ -11,9 +11,22 @@ AppsOnAir-AppSync is an iOS CocoaPod that enforces mandatory app updates and man
 ⭐️ Compatible with Objective-C, Swift, and SwiftUI
 
 
-## Example
+## Installation
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+AppsOnAir-AppSync is available through [CocoaPods](https://cocoapods.org). To use or install AppsOnAir-AppSync with CocoaPods,
+simply add the following line to your Podfile:
+
+```ruby
+pod 'AppsOnAir-AppSync'
+```
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. To use AppsOnAir-AppSync with Swift Package Manger, add it to `dependencies` in your `Package.swift`
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git")
+]
+```
 
 ## Requirements
 
@@ -27,8 +40,16 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'AppsOnAir-AppSync'
 ```
-## Usages
- Write code in AppDelegate file if you want to start on app launch.
+## USAGE 
+Add APIKey in your app info.plist file.
+```xml
+<key>AppsOnAirAPIKey</key>
+<string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
+```
+how to get APIKey for more details check this [URL](https://documentation.appsonair.com/Mobile-Quickstart/ios-sdk-setup)
+
+
+### Write code in AppDelegate file if you want to start on app launch.
 
 Swift Ui / Swift : 
 ```ruby
