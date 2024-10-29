@@ -9,11 +9,11 @@
 Pod::Spec.new do |s|
   s.name             = 'AppsOnAir-AppSync'
   s.version          = '0.1.0'
-  s.summary          = 'AppsOnAir-AppSync is library for managing app updates and its maintenance.'
+  s.summary          = 'AppsOnAir AppSync'
 
-  s.description      = 'AppsOnAir-AppSync is library for managing app updates and its maintenance. It will handle from out web portal.'
+  s.description      = 'Appsonair services for force update and maintenance for iOS mobile apps.'
 
-  s.homepage         = 'https://documentation.appsonair.com/Mobile-Quickstart/ios-sdk-setup'
+  s.homepage         = 'https://documentation.appsonair.com/Mobile-Quickstart/ios-sdk-setup/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'devtools-logicwind' => 'devtools@logicwind.com' }
   s.source           = { :git => 'https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git', :tag => s.version.to_s }
