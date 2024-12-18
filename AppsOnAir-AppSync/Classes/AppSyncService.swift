@@ -93,7 +93,10 @@ public class AppSyncService : NSObject {
     private func presentAppUpdate(appUpdateInfo: NSDictionary) {
         if (appUpdateInfo.count > 0) {
             DispatchQueue.main.sync {
-                let bundle = Bundle(for: type(of: self))
+                // FIXME: Changes for Cross platform issue solved
+                // let bundle = Bundle(for: type(of: self))
+                let bundleURL = Bundle(for: AppSyncService.self).url(forResource: "AppsOnAir-AppSync", withExtension: "bundle")
+                let bundle = Bundle(url: bundleURL ?? URL(fileURLWithPath: ""))
                 let storyboard = UIStoryboard(name: "AppUpdate", bundle: bundle)
                 let modalVc = storyboard.instantiateViewController(withIdentifier: "MaintenanceViewController") as! MaintenanceViewController
                 modalVc.updateDataDictionary = appUpdateInfo
