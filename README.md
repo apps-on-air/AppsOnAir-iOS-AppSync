@@ -51,6 +51,20 @@ how to get APIKey for more details check this [URL](https://documentation.appson
 
 ### Write code in AppDelegate file if you want to start on app launch.
 
+Firstly, import AppsOnAir_AppSync in appDelegate
+
+Swift / SwiftUI
+```swift
+import AppsOnAir_AppSync
+```
+Objective-c
+
+```swift
+#import "AppsOnAir_AppSync-Swift.h"
+```
+
+### App-Sync Implement Code
+
 Swift Ui / Swift : 
 ```ruby
     # AppsOnAirAppSync class object
