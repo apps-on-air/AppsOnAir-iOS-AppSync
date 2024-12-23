@@ -62,7 +62,9 @@ class MaintenanceViewController: UIViewController {
                     self.staticMaintenanceImageView.load(url: imageUrl)
                 } else {
                     // Use a default URL if the image URL is nil or invalid then set default icons
-                    if let image = UIImage(named: "ic_maintenance", in: Bundle(for: type(of: self)), compatibleWith: nil) {
+                    let bundleURL = Bundle(for: MaintenanceViewController.self).url(forResource: "AppsOnAir-AppSync", withExtension: "bundle")
+                    let bundle = Bundle(url: bundleURL ?? URL(fileURLWithPath: ""))
+                    if let image = UIImage(named: "ic_maintenance", in: bundle, compatibleWith: nil) {
                         self.staticMaintenanceImageView.image = image
                     } else {
                         Logger.logInternal("Image not found")

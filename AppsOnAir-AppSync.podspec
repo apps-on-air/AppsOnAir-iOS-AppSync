@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppsOnAir-AppSync'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'AppsOnAir AppSync'
 
   s.description      = 'Appsonair services for force update and maintenance for iOS mobile apps.'
@@ -21,8 +21,10 @@ Pod::Spec.new do |s|
   s.swift_version  = '5.0'
   s.ios.deployment_target = '12.0'
 
-  # Access the all the UI File within the pod 
-  s.resources = ['AppsOnAir-AppSync/Assets/**/*'] # for access SwiftUI  inside AppSync
+  # Access the all the UI File within the pod  # for access SwiftUI  inside AppSync
+  s.resource_bundles = {
+    'AppsOnAir-AppSync' => ['AppsOnAir-AppSync/Assets/**/*']
+  }
 
   s.source_files = 'AppsOnAir-AppSync/Classes/**/*'
   

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B77FF3442ADE23519304C5B228A3E45"
-               BuildableName = "AppsOnAir_Core.framework"
-               BlueprintName = "AppsOnAir-Core"
+               BlueprintIdentifier = "B72CEB2F99BE3C6D590B6B957C0DD2E9"
+               BuildableName = "AppsOnAir-AppSync.bundle"
+               BlueprintName = "AppsOnAir-AppSync-AppsOnAir-AppSync"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
