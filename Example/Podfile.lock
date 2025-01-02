@@ -1,5 +1,5 @@
 PODS:
-  - AppsOnAir-AppSync (0.2.0):
+  - AppsOnAir-AppSync (0.3.0):
     - AppsOnAir-Core
   - AppsOnAir-Core (0.0.1):
     - ReachabilitySwift
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppsOnAir-AppSync: 0e3ebe292b651c90d2c4970b9978c4ed118c551c
+  AppsOnAir-AppSync: 24a62ef1007b6343e390576b6d19ab1f24f8268e
   AppsOnAir-Core: 220848815951591f32fd61a5b28e4a9cf83d0d96
   ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
 
