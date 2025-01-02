@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //MARK: - Declarations
         //AppsOnAir AppSync ios services Initialization
-        let appOnAirSyncServices = AppSyncService()
+        let appOnAirSyncServices = AppSyncService.shared
 
         //MARK: - View Methods
         //Help to enable sync manager for app

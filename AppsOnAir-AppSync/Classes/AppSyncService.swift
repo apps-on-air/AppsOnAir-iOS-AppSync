@@ -6,6 +6,8 @@ import AppsOnAir_Core
 
 public class AppSyncService : NSObject {
     
+    @objc public static let shared = AppSyncService()
+    
     //MARK: - Declarations
     private var window: UIWindow?
     
@@ -36,20 +38,8 @@ public class AppSyncService : NSObject {
             //check force-update is not verify and network is connected
             if ((!(self.isCheckFetchUpdate)) && isConnected) {
                 //for Force Update Alert
-                AppSyncApiService.cdnRequest(self.appId) { cdnData in
-                    
-                    var appUpdateInfo: NSDictionary = NSDictionary()
-                    // set CDN data
-                    appUpdateInfo = cdnData
-                    // check get app data from API if CDN data is empty or getting error
-                    if(appUpdateInfo.count == 0 || appUpdateInfo["error"] != nil) {
-                        AppSyncApiService.fetchAppUpdate(self.appId) { (appUpdateData) in
-                            appUpdateInfo = appUpdateData
-                            self.handleAlert(completion: completion, appUpdateInfo: appUpdateInfo)
-                        }
-                    } else {
-                        self.handleAlert(completion: completion, appUpdateInfo: appUpdateInfo)
-                    }
+                self.getAppUpdate { appUpdateData in
+                    completion(appUpdateData)
                 }
             }
         }
@@ -69,24 +59,53 @@ public class AppSyncService : NSObject {
             //set flag is true for force-update is verified
             self.isCheckFetchUpdate = true
         }
-       
+    }
+    
+    ///fetch the update data of app
+    private func getAppUpdate(_ completion: @escaping (NSDictionary) -> () = { _ in }){
+        DispatchQueue.main.async {
+            if(self.appsOnAirCoreServices.isNetworkConnected ?? false){
+                //get app data from API from CDN
+                AppSyncApiService.cdnRequest(self.appId) { cdnData in
+                    var appUpdateInfo: NSDictionary = NSDictionary()
+                    // set CDN data
+                    appUpdateInfo = cdnData
+                    // check get app data from API if CDN data is empty or getting error
+                    if(appUpdateInfo.count == 0 || appUpdateInfo["error"] != nil) {
+                        AppSyncApiService.fetchAppUpdate(self.appId) { (appUpdateData) in
+                            appUpdateInfo = appUpdateData
+                            self.handleAlert(completion: completion, appUpdateInfo: appUpdateInfo)
+                        }
+                    } else {
+                        self.handleAlert(completion: completion, appUpdateInfo: appUpdateInfo)
+                    }
+                }
+            }
+        }
     }
     
     /// help to sync and network status change handler when NativeUi set to false. by default showNativeUI value is true
     @objc public func sync(directory: NSDictionary = ["showNativeUI": true],completion: @escaping (NSDictionary) -> () = { _ in }) {
         // To initialize the network services delegate and set AppId from AppsOnAir-core SDK and set Native UI
-        appsOnAirCoreServices.initialize()
-        self.appId = appsOnAirCoreServices.appId
         self.showNativeUI = directory["showNativeUI"] as? Bool
-        // display message while forgot to set showNativeUI in project
-        if self.appId != "" {
-            // Method to set the network status change handler when NativeUi set to false
-            networkStateChange { appUpdateData in
+        if(self.isCheckFetchUpdate) {
+            self.getAppUpdate { appUpdateData in
                 completion(appUpdateData)
             }
-        }else {
-            completion(["error":errorMessage])
+        } else {
+            appsOnAirCoreServices.initialize()
+            self.appId = appsOnAirCoreServices.appId
+            // display message while forgot to set showNativeUI in project
+            if self.appId != "" {
+                // Method to set the network status change handler when NativeUi set to false
+                networkStateChange { appUpdateData in
+                    completion(appUpdateData)
+                }
+            }else {
+                completion(["error":errorMessage])
+            }
         }
+      
     }
     
     ///help to present App Update Alert

@@ -20,14 +20,6 @@ simply add the following line to your Podfile:
 pod 'AppsOnAir-AppSync'
 ```
 
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. To use AppsOnAir-AppSync with Swift Package Manger, add it to `dependencies` in your `Package.swift`
-
-```swift
-dependencies: [
-    .package(url: "https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git")
-]
-```
-
 ## Requirements
 
 Minimum deployment target: 12.0
@@ -68,7 +60,7 @@ Objective-c
 Swift Ui / Swift : 
 ```ruby
     # AppsOnAirAppSync class object
-    let appOnAirSyncService = AppSyncService()
+    let appOnAirSyncService = AppSyncService.shared
 
     # AppsOnAirCore common services Initialization
     appOnAirSyncService.sync(directory: ["showNativeUI":false]) { appUpdateData in
@@ -83,7 +75,7 @@ Objective C :
 @end
 
     # App Sync Class instance create
-    self.appSyncService = [[AppSyncService alloc] init];
+    self.appSyncService =  [AppSyncService shared];
     
     #  Help to enable sync manager for app with directory for showNativeUi handling and completion method
     [self.appSyncService syncWithDirectory:@{@"showNativeUI":@NO} completion:^(NSDictionary *appUpdate) {
