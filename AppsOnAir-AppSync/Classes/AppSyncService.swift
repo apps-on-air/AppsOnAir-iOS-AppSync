@@ -54,8 +54,25 @@ public class AppSyncService : NSObject {
                 // Force update alert for native UI
                 self.presentAppUpdate(appUpdateInfo: appUpdateInfo)
             }
+            // Update response for user
+            var updatedAppUpdateInfo = appUpdateInfo as? [String: Any] ?? [:]
+            
+            // update response cross the platform
+            if let updateData = updatedAppUpdateInfo["updateData"] as? [String: Any] {
+                
+                let newUpdateData:NSDictionary = [
+                    "isUpdateEnabled": updateData["isIOSUpdate"] as? Bool ?? false,
+                    "buildNumber": updateData["iosBuildNumber"] as? String ?? "",
+                    "minBuildVersion": updateData["iosMinBuildVersion"] as? String ?? "",
+                    "updateLink": updateData["iosUpdateLink"] as? String ?? "",
+                    "isForcedUpdate": updateData["isIOSForcedUpdate"] as? Bool ?? false
+                ]
+                
+                updatedAppUpdateInfo["updateData"] = newUpdateData
+              
+            }
             // Pass App Update data to the user for custom UI handling
-            completion(appUpdateInfo)
+            completion(updatedAppUpdateInfo as NSDictionary)
             //set flag is true for force-update is verified
             self.isCheckFetchUpdate = true
         }

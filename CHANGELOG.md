@@ -1,3 +1,7 @@
+## 0.4.0
+
+* Provided common response for update alert across platform
+
 ## 0.3.0
 
 * Added manually update alert callback
