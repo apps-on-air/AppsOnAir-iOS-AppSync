@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppsOnAir-AppSync'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'AppsOnAir AppSync'
 
   s.description      = 'Appsonair services for force update and maintenance for iOS mobile apps.'
@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.source_files = 'AppsOnAir-AppSync/Classes/**/*'
   
   # AppsOnAir Core pod
-  s.dependency 'AppsOnAir-Core'
+  s.dependency 'AppsOnAir-Core', '~> 0.0.2'
  
 end
