@@ -1,3 +1,7 @@
+## 0.5.0
+
+* Upgrade dependency
+
 ## 0.4.0
 
 * Standardized the update alert response across platforms.

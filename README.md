@@ -38,7 +38,7 @@ Add APIKey in your app info.plist file.
 <key>AppsOnAirAPIKey</key>
 <string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
 ```
-how to get APIKey for more details check this [URL](https://documentation.appsonair.com/Mobile-Quickstart/ios-sdk-setup)
+how to get APIKey for more details check this [URL](https://documentation.appsonair.com/MobileQuickstart/GettingStarted)
 
 
 ### Write code in AppDelegate file if you want to start on app launch.
