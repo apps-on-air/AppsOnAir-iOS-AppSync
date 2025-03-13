@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppsOnAir-AppSync'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'AppsOnAir AppSync'
 
   s.description      = 'Appsonair services for force update and maintenance for iOS mobile apps.'
 
-  s.homepage         = 'https://documentation.appsonair.com/Mobile-Quickstart/ios-sdk-setup/'
+  s.homepage         = 'https://documentation.appsonair.com/MobileQuickstart/AppSync/ios-sdk-setup'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'devtools-logicwind' => 'devtools@logicwind.com' }
   s.source           = { :git => 'https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git', :tag => s.version.to_s }
@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.source_files = 'AppsOnAir-AppSync/Classes/**/*'
   
   # AppsOnAir Core pod
-  s.dependency 'AppsOnAir-Core', '~> 0.0.2'
+  s.dependency 'AppsOnAir-Core', '~> 0.0.3'
  
 end
