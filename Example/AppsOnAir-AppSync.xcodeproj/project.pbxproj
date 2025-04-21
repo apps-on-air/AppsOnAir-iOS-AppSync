@@ -45,6 +45,8 @@
 		895310CB9B33EB6BEEA413FC /* Pods-AppsOnAir-AppSync_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Tests.release.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Tests/Pods-AppsOnAir-AppSync_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A15F3A55D4639D2C7C76650F /* Pods_AppsOnAir_AppSync_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAir_AppSync_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69667B64779DFAEB82EBC1C /* Pods_AppsOnAir_AppSync_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAir_AppSync_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C019442DB64A9300EAD829 /* AppsOnAir_Core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppsOnAir_Core.xcframework; path = "Pods/AppsOnAir-Core/AppsOnAir_Core.xcframework"; sourceTree = "<group>"; };
+		B6C01A3E2DB6526600EAD829 /* AppsOnAir_AppSync.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppsOnAir_AppSync.xcframework; path = ../AppsOnAir_AppSync.xcframework; sourceTree = "<group>"; };
 		EDC7CEEF9D43AF05CD3EBD10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F9D5F3A3F914C1EFF0D80DA4 /* Pods-AppsOnAir-AppSync_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Example.debug.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Example/Pods-AppsOnAir-AppSync_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,8 @@
 		1BAAE36EEBF9092D6E17434F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6C01A3E2DB6526600EAD829 /* AppsOnAir_AppSync.xcframework */,
+				B6C019442DB64A9300EAD829 /* AppsOnAir_Core.xcframework */,
 				A15F3A55D4639D2C7C76650F /* Pods_AppsOnAir_AppSync_Example.framework */,
 				A69667B64779DFAEB82EBC1C /* Pods_AppsOnAir_AppSync_Tests.framework */,
 			);
@@ -314,15 +318,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppsOnAir-AppSync_Example/Pods-AppsOnAir-AppSync_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AppsOnAir-AppSync/AppsOnAir_AppSync.framework",
-				"${BUILT_PRODUCTS_DIR}/AppsOnAir-Core/AppsOnAir_Core.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppsOnAir-AppSync/AppsOnAir_AppSync.framework/AppsOnAir_AppSync",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppsOnAir-Core/AppsOnAir_Core.framework/AppsOnAir_Core",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppsOnAir_AppSync.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppsOnAir_Core.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
