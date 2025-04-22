@@ -1,0 +1,449 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AppsOnAir_AppSync",
+    "printedName": "AppsOnAir_AppSync",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "AppsOnAir_Core",
+        "printedName": "AppsOnAir_Core",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "AppsOnAir_Core",
+        "printedName": "AppsOnAir_Core",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppSyncService",
+        "printedName": "AppSyncService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppSyncService",
+                "printedName": "AppsOnAir_AppSync.AppSyncService",
+                "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService(cpy)shared",
+            "mangledName": "$s17AppsOnAir_AppSync0dE7ServiceC6sharedACvpZ",
+            "moduleName": "AppsOnAir_AppSync",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppSyncService",
+                    "printedName": "AppsOnAir_AppSync.AppSyncService",
+                    "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService(cm)shared",
+                "mangledName": "$s17AppsOnAir_AppSync0dE7ServiceC6sharedACvgZ",
+                "moduleName": "AppsOnAir_AppSync",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(directory:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSDictionary"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSDictionary) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService(im)syncWithDirectory:completion:",
+            "mangledName": "$s17AppsOnAir_AppSync0dE7ServiceC4sync9directory10completionySo12NSDictionaryC_yAHctF",
+            "moduleName": "AppsOnAir_AppSync",
+            "objc_name": "syncWithDirectory:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppSyncService",
+                "printedName": "AppsOnAir_AppSync.AppSyncService",
+                "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService(im)init",
+            "mangledName": "$s17AppsOnAir_AppSync0dE7ServiceCACycfc",
+            "moduleName": "AppsOnAir_AppSync",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AppsOnAir_AppSync@objc(cs)AppSyncService",
+        "mangledName": "$s17AppsOnAir_AppSync0dE7ServiceC",
+        "moduleName": "AppsOnAir_AppSync",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "AppsOnAir_Core",
+        "printedName": "AppsOnAir_Core",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "AppsOnAir_AppSync"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 569,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 94,
+      "value": "\"AppsOnAir APIKey is Not initialized for more details: \n https:\/\/documentation.appsonair.com\""
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "kind": "StringLiteral",
+      "offset": 4603,
+      "length": 14,
+      "value": "\"showNativeUI\""
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4619,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 271,
+      "length": 31,
+      "value": "\"https:\/\/server.appsonair.com\/\""
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 28,
+      "value": "\"https:\/\/cdn.appsonair.com\/\""
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 437,
+      "length": 18,
+      "value": "\"v1\/app-services\/\""
+    },
+    {
+      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 493,
+      "length": 14,
+      "value": "\"app-details\/\""
+    },
+    {
+      "filePath": "\/tmp\/iphoneos\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AppsOnAir_AppSync\/IntermediateBuildFilesPath\/AppsOnAir_AppSync.build\/Release-iphonesimulator\/AppsOnAir_AppSync.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 740,
+      "length": 16,
+      "value": "\"ic_maintenance\""
+    }
+  ]
+}
