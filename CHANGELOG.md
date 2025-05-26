@@ -1,3 +1,7 @@
+## 0.6.0
+
+* Add XCFramework for enhanced security and Upgrade dependency.
+
 ## 0.5.0
 
 * Upgrade dependency
