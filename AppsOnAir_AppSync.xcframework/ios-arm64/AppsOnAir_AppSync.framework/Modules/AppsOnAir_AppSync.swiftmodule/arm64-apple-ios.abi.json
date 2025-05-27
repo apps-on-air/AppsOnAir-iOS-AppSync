@@ -376,65 +376,65 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
       "kind": "StringLiteral",
       "offset": 363,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
       "kind": "BooleanLiteral",
       "offset": 569,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
       "kind": "StringLiteral",
       "offset": 868,
       "length": 94,
       "value": "\"AppsOnAir APIKey is Not initialized for more details: \n https:\/\/documentation.appsonair.com\""
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
       "kind": "StringLiteral",
       "offset": 4603,
       "length": 14,
       "value": "\"showNativeUI\""
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/AppSyncService.swift",
       "kind": "BooleanLiteral",
       "offset": 4619,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 271,
+      "offset": 86,
       "length": 31,
       "value": "\"https:\/\/server.appsonair.com\/\""
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 330,
+      "offset": 145,
       "length": 28,
       "value": "\"https:\/\/cdn.appsonair.com\/\""
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 437,
+      "offset": 250,
       "length": 18,
       "value": "\"v1\/app-services\/\""
     },
     {
-      "filePath": "\/Users\/harshil-gandhi-us\/Desktop\/Demo\/AppsOnAir\/AppsOnAirAppSync\/AppsOnAir-iOS-AppSync\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
+      "filePath": "\/Users\/harshil-gandhi-us\/Documents\/AppsOnAirPrivateRepo\/AppSync-iOS-AppSync-framework\/AppsOnAir_AppSync\/AppsOnAir_AppSync\/EnvironmentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 314,
       "length": 14,
       "value": "\"app-details\/\""
     },

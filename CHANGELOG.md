@@ -1,3 +1,8 @@
+## 0.6.1
+
+* Default maintenance icon issue resolved
+* Minor improvement 
+
 ## 0.6.0
 
 * Add XCFramework for enhanced security and Upgrade dependency.
