@@ -1,3 +1,7 @@
+## 0.6.2
+
+* Minor improvement and fixes
+
 ## 0.6.1
 
 * Default maintenance icon issue resolved

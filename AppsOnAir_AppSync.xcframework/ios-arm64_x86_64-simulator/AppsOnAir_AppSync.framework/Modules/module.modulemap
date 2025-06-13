@@ -1,4 +1,0 @@
-framework module AppsOnAir_AppSync {
-  header "AppsOnAir_AppSync-Swift.h"
-  requires objc
-}
