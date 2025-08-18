@@ -1,3 +1,7 @@
+## 0.6.3
+
+* Upgrade dependency
+
 ## 0.6.2
 
 * Minor improvement and fixes
