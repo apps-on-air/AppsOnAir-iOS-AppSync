@@ -35,7 +35,7 @@ pod 'AppsOnAir-AppSync'
 ## USAGE 
 Add APIKey in your app info.plist file.
 ```xml
-<key>AppsOnAirAPIKey</key>
+<key>AppsonairAppId</key>
 <string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
 ```
 how to get APIKey for more details check this [URL](https://documentation.appsonair.com/MobileQuickstart/GettingStarted)
