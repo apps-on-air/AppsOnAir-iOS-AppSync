@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AppsOnAir-AppSync'
-  s.version          = '0.6.3'
+  s.version          = '1.2.0'
   s.summary          = 'AppsOnAir AppSync'
 
   s.description      = 'Appsonair services for force update and maintenance for iOS mobile apps.'
