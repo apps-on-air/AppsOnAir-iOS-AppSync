@@ -1,6 +1,10 @@
+## 1.2.0
+
+* Dependency upgrade
+
 ## 0.6.3
 
-* Upgrade dependency
+* Dependency upgrade
 
 ## 0.6.2
 
@@ -13,11 +17,11 @@
 
 ## 0.6.0
 
-* Add XCFramework for enhanced security and Upgrade dependency.
+* Add XCFramework for enhanced security and Dependency upgrade.
 
 ## 0.5.0
 
-* Upgrade dependency
+* Dependency upgrade
 
 ## 0.4.0
 
