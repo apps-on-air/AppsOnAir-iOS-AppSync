@@ -33,12 +33,12 @@ it, simply add the following line to your Podfile:
 pod 'AppsOnAir-AppSync'
 ```
 ## USAGE 
-Add APIKey in your app info.plist file.
+Add application id in your app info.plist file.
 ```xml
 <key>AppsonairAppId</key>
 <string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
 ```
-how to get APIKey for more details check this [URL](https://documentation.appsonair.com/MobileQuickstart/GettingStarted)
+how to get application id for more details check this [URL](https://documentation.appsonair.com/MobileQuickstart/GettingStarted)
 
 
 ### Write code in AppDelegate file if you want to start on app launch.
