@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.source_files = 'AppsOnAir-AppSync/Classes/**/*'
   
   # AppsOnAir Core pod
-  s.dependency 'AppsOnAir-Core', '0.0.6'
+  s.dependency 'AppsOnAir-Core', '1.1.0'
  
 end
