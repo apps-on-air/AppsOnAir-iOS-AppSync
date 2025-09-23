@@ -60,10 +60,10 @@ Objective-c
 Swift Ui / Swift : 
 ```ruby
     # AppsOnAirAppSync class object
-    let appOnAirSyncService = AppSyncService.shared
+    let appsOnAirSyncService = AppSyncService.shared
 
     # AppsOnAirCore common services Initialization
-    appOnAirSyncService.sync(directory: ["showNativeUI":false]) { appUpdateData in
+    appsOnAirSyncService.sync(directory: ["showNativeUI":false]) { appUpdateData in
             # Write the code here when showNative UI is false
       }
 ```

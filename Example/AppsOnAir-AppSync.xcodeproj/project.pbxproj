@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		147419CA7AA70EA4225A45DB /* Pods_AppsOnAir_AppSync_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D10D2ABC0136B443541AAFC /* Pods_AppsOnAir_AppSync_Example.framework */; };
+		08578614FA15EDD1837189A8 /* Pods_AppsOnAir_AppSync_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AFBC0899A0DF2BAAA7CFA7 /* Pods_AppsOnAir_AppSync_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		94288A37D27B247BC2BC723C /* Pods_AppsOnAir_AppSync_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32671733CF199E7B3B0CFBE6 /* Pods_AppsOnAir_AppSync_Tests.framework */; };
+		97AD6965E11183B47D1CE073 /* Pods_AppsOnAir_AppSync_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840D6987EA3411210A8853C5 /* Pods_AppsOnAir_AppSync_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09C327298C0DFA2AE9CD6C54 /* Pods-AppsOnAir-AppSync_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Example.debug.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Example/Pods-AppsOnAir-AppSync_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		32671733CF199E7B3B0CFBE6 /* Pods_AppsOnAir_AppSync_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAir_AppSync_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3562460D5639F1DE839417D0 /* Pods-AppsOnAir-AppSync_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Tests.release.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Tests/Pods-AppsOnAir-AppSync_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3D10D2ABC0136B443541AAFC /* Pods_AppsOnAir_AppSync_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAir_AppSync_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A50205FDC77F25713E25DB /* Pods-AppsOnAir-AppSync_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Tests/Pods-AppsOnAir-AppSync_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		53AFBC0899A0DF2BAAA7CFA7 /* Pods_AppsOnAir_AppSync_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAir_AppSync_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5684764344BDDA7734F9F3D2 /* AppsOnAir-AppSync.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "AppsOnAir-AppSync.podspec"; path = "../AppsOnAir-AppSync.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* AppsOnAir-AppSync_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppsOnAir-AppSync_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,10 +42,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7A94AFB3DA48738317EAF907 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		85FCB420E2E5C53E632560E8 /* Pods-AppsOnAir-AppSync_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Tests/Pods-AppsOnAir-AppSync_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A14A8D832F47CEB833C699F3 /* Pods-AppsOnAir-AppSync_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Example.release.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Example/Pods-AppsOnAir-AppSync_Example.release.xcconfig"; sourceTree = "<group>"; };
+		840D6987EA3411210A8853C5 /* Pods_AppsOnAir_AppSync_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsOnAir_AppSync_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		941D62ED6EF344EB92C7C0F7 /* Pods-AppsOnAir-AppSync_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Tests.release.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Tests/Pods-AppsOnAir-AppSync_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B6C019442DB64A9300EAD829 /* AppsOnAir_Core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppsOnAir_Core.xcframework; path = "Pods/AppsOnAir-Core/AppsOnAir_Core.xcframework"; sourceTree = "<group>"; };
 		B6C01A3E2DB6526600EAD829 /* AppsOnAir_AppSync.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AppsOnAir_AppSync.xcframework; path = ../AppsOnAir_AppSync.xcframework; sourceTree = "<group>"; };
+		BC9BFC7D10DC6F834ED8F491 /* Pods-AppsOnAir-AppSync_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Example.release.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Example/Pods-AppsOnAir-AppSync_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CD75BFA66C9E899482EA0DDB /* Pods-AppsOnAir-AppSync_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsOnAir-AppSync_Example.debug.xcconfig"; path = "Target Support Files/Pods-AppsOnAir-AppSync_Example/Pods-AppsOnAir-AppSync_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EDC7CEEF9D43AF05CD3EBD10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147419CA7AA70EA4225A45DB /* Pods_AppsOnAir_AppSync_Example.framework in Frameworks */,
+				97AD6965E11183B47D1CE073 /* Pods_AppsOnAir_AppSync_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94288A37D27B247BC2BC723C /* Pods_AppsOnAir_AppSync_Tests.framework in Frameworks */,
+				08578614FA15EDD1837189A8 /* Pods_AppsOnAir_AppSync_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +76,8 @@
 			children = (
 				B6C01A3E2DB6526600EAD829 /* AppsOnAir_AppSync.xcframework */,
 				B6C019442DB64A9300EAD829 /* AppsOnAir_Core.xcframework */,
-				3D10D2ABC0136B443541AAFC /* Pods_AppsOnAir_AppSync_Example.framework */,
-				32671733CF199E7B3B0CFBE6 /* Pods_AppsOnAir_AppSync_Tests.framework */,
+				840D6987EA3411210A8853C5 /* Pods_AppsOnAir_AppSync_Example.framework */,
+				53AFBC0899A0DF2BAAA7CFA7 /* Pods_AppsOnAir_AppSync_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,10 +155,10 @@
 		7123281FA0521EB3A5D283C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				09C327298C0DFA2AE9CD6C54 /* Pods-AppsOnAir-AppSync_Example.debug.xcconfig */,
-				A14A8D832F47CEB833C699F3 /* Pods-AppsOnAir-AppSync_Example.release.xcconfig */,
-				85FCB420E2E5C53E632560E8 /* Pods-AppsOnAir-AppSync_Tests.debug.xcconfig */,
-				3562460D5639F1DE839417D0 /* Pods-AppsOnAir-AppSync_Tests.release.xcconfig */,
+				CD75BFA66C9E899482EA0DDB /* Pods-AppsOnAir-AppSync_Example.debug.xcconfig */,
+				BC9BFC7D10DC6F834ED8F491 /* Pods-AppsOnAir-AppSync_Example.release.xcconfig */,
+				08A50205FDC77F25713E25DB /* Pods-AppsOnAir-AppSync_Tests.debug.xcconfig */,
+				941D62ED6EF344EB92C7C0F7 /* Pods-AppsOnAir-AppSync_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -170,11 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AppsOnAir-AppSync_Example" */;
 			buildPhases = (
-				D96129298F0BA1449F67A2D8 /* [CP] Check Pods Manifest.lock */,
+				2379E66BAAD3336412FC3D26 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				71865F8976D7E6EEF4752093 /* [CP] Embed Pods Frameworks */,
+				738AF9B773790F32F6A10D08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +189,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AppsOnAir-AppSync_Tests" */;
 			buildPhases = (
-				5056436065921E6165E60B5A /* [CP] Check Pods Manifest.lock */,
+				810F892FE5D23612EAD76580 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -267,7 +267,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5056436065921E6165E60B5A /* [CP] Check Pods Manifest.lock */ = {
+		2379E66BAAD3336412FC3D26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,14 +282,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppsOnAir-AppSync_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AppsOnAir-AppSync_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71865F8976D7E6EEF4752093 /* [CP] Embed Pods Frameworks */ = {
+		738AF9B773790F32F6A10D08 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +311,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppsOnAir-AppSync_Example/Pods-AppsOnAir-AppSync_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D96129298F0BA1449F67A2D8 /* [CP] Check Pods Manifest.lock */ = {
+		810F892FE5D23612EAD76580 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,7 +326,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppsOnAir-AppSync_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AppsOnAir-AppSync_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,7 +484,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09C327298C0DFA2AE9CD6C54 /* Pods-AppsOnAir-AppSync_Example.debug.xcconfig */;
+			baseConfigurationReference = CD75BFA66C9E899482EA0DDB /* Pods-AppsOnAir-AppSync_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -506,7 +506,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A14A8D832F47CEB833C699F3 /* Pods-AppsOnAir-AppSync_Example.release.xcconfig */;
+			baseConfigurationReference = BC9BFC7D10DC6F834ED8F491 /* Pods-AppsOnAir-AppSync_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -528,7 +528,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85FCB420E2E5C53E632560E8 /* Pods-AppsOnAir-AppSync_Tests.debug.xcconfig */;
+			baseConfigurationReference = 08A50205FDC77F25713E25DB /* Pods-AppsOnAir-AppSync_Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -553,7 +553,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3562460D5639F1DE839417D0 /* Pods-AppsOnAir-AppSync_Tests.release.xcconfig */;
+			baseConfigurationReference = 941D62ED6EF344EB92C7C0F7 /* Pods-AppsOnAir-AppSync_Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
