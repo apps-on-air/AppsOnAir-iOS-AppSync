@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'AppsOnAir-AppSync'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'AppsOnAir AppSync'
 
-  s.description      = 'Appsonair services for force update and maintenance for iOS mobile apps.'
+  s.description      = 'AppsOnAir services for force update and maintenance for iOS mobile apps.'
 
   s.homepage         = 'https://documentation.appsonair.com/MobileQuickstart/AppSync/ios-sdk-setup'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
     'AppsOnAir-AppSync' => ['AppsOnAir-AppSync/Assets/**/*']
   }
 
-  s.source_files = 'AppsOnAir-AppSync/Classes/**/*'
+  s.source_files = 'AppsOnAir-AppSync/Classes/**/*.{swift,h,m}'
   
   # AppsOnAir Core pod
-  s.dependency 'AppsOnAir-Core', '1.1.0'
+  s.dependency 'AppsOnAir-Core', '1.1.1'
  
 end
