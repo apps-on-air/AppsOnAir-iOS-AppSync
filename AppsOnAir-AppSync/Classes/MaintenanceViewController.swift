@@ -1,9 +1,11 @@
-import UIKit
-import AppsOnAir_Core
+#if canImport(UIKit)
 import Foundation
+import AppsOnAir_Core
+
+import UIKit
 
 class MaintenanceViewController: UIViewController {
-    
+
     @IBOutlet weak var updateView: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var titleText: UILabel!
@@ -16,12 +18,12 @@ class MaintenanceViewController: UIViewController {
     @IBOutlet weak var staticMaintenanceImageView: UIImageView!
     @IBOutlet weak var staticMaintenanceText: UILabel!
     @IBOutlet weak var staticMaintenanceDescText: UILabel!
-    
+
     var updateDataDictionary : NSDictionary?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
 
         self.staticMaintenanceView.isHidden = true
@@ -29,44 +31,46 @@ class MaintenanceViewController: UIViewController {
         self.maintenanceView.isHidden = true
         self.setUpdateViewLayout()
     }
-    
+
     func setUpdateViewLayout() {
         self.updateView.layer.cornerRadius = 8.0
         self.updateView.layer.borderWidth = 1.0
         self.updateView.layer.borderColor = UIColor(hex: "#DDE1EE")?.cgColor
         self.updateView.backgroundColor = .white
-        
+
         self.titleText.textColor = UIColor(hex: "#1A1D40")
         self.subTitleText.textColor = UIColor(hex: "#1A1D40")
-        
+
         self.dismissButton.setTitleColor(UIColor(hex: "#585E75"), for: .normal)
         self.updateButton.setTitleColor(UIColor(hex: "#FFFFFF"), for: .normal)
         self.updateButton.backgroundColor = UIColor(hex: "#007AFF")
         self.updateButton.layer.cornerRadius = 4.0
-        
+
         let isMaintenanceAvailable = self.updateDataDictionary?.value(forKey: "isMaintenance") as! Bool
         let iosUpdate = self.updateDataDictionary?.value(forKeyPath: "updateData.isIOSUpdate") as? Bool
-        
+
         if isMaintenanceAvailable == true {
 
             self.view.backgroundColor = UIColor(hex: "#00000080")
             self.maintenanceView.isHidden = false
             if let maintenanceData = self.updateDataDictionary?.value(forKey: "maintenanceData") as? NSDictionary {
-                
+
                 self.staticMaintenanceView.isHidden = false
                 self.updateView.isHidden = true
-                
+
                 if let imageUrlStr = maintenanceData.value(forKey: "image") as? String,
                    let imageUrl = URL(string: imageUrlStr) {
                     // Use the valid image URL
                     self.staticMaintenanceImageView.load(url: imageUrl)
                 } else {
                     // Use a default URL if the image URL is nil or invalid then set default icons
-                    // FIXME: Changes for framework
-                    // let bundle = Bundle(for: type(of: self))
-                    // FIXME: Changes for Cross platform issue solved
+                    #if SWIFT_PACKAGE
+                    let bundle = Bundle.module
+                    #else
+                    // CocoaPods packages resources in a named .bundle
                     let bundleURL = Bundle(for: MaintenanceViewController.self).url(forResource: "AppsOnAir-AppSync", withExtension: "bundle")
                     let bundle = Bundle(url: bundleURL ?? URL(fileURLWithPath: ""))
+                    #endif
                     if let image = UIImage(named: "ic_maintenance", in: bundle, compatibleWith: nil) {
                         self.staticMaintenanceImageView.image = image
                     } else {
@@ -85,7 +89,6 @@ class MaintenanceViewController: UIViewController {
                 if let textColor = maintenanceData.value(forKey: "textColorCode") as? String {
                     self.staticMaintenanceDescText.textColor = UIColor(hex: textColor)
                     self.staticMaintenanceText.textColor = UIColor(hex: textColor)
-                    
                 }
                 self.staticMaintenanceText.sizeToFit()
                 self.staticMaintenanceDescText.sizeToFit()
@@ -120,7 +123,7 @@ class MaintenanceViewController: UIViewController {
             self.dismissController()
         }
     }
-    
+
     func showUpdateView(_ isForceUpdate: Bool) {
         self.view.backgroundColor = UIColor(hex: "#00000080")
         self.logoImageView.image = UIImage.appIcon
@@ -134,27 +137,26 @@ class MaintenanceViewController: UIViewController {
         self.updateView.isHidden = false
         self.maintenanceView.isHidden = true
     }
-    
-   public func dismissController() {
+
+    public func dismissController() {
         self.dismiss(animated: true) {
             // This code snippet is for fixing one UI accessability related bug for our other cross platform plugin
             NotificationCenter.default.post(name: NSNotification.Name("visibilityChanges"), object: nil, userInfo: ["isPresented": false])
         }
     }
-    
+
     @IBAction func onTapDismissButton(_ sender: UIButton) {
         self.dismissController()
     }
-    
+
     func verifyUrl(_ urlString: String?) -> Bool {
         guard let urlString = urlString,
               let url = URL(string: urlString) else {
             return false
         }
-
         return UIApplication.shared.canOpenURL(url)
     }
-    
+
     @IBAction func onTapUpdateButton(_ sender: Any) {
         if let updateData = self.updateDataDictionary?.value(forKey: "updateData") as? NSDictionary {
             if let updateUrl = updateData.value(forKey: "iosUpdateLink") as? String {
@@ -167,5 +169,5 @@ class MaintenanceViewController: UIViewController {
             }
         }
     }
-    
 }
+#endif

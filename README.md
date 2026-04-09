@@ -11,27 +11,50 @@ AppsOnAir-AppSync is an iOS CocoaPod that enforces mandatory app updates and man
 ⭐️ Compatible with Objective-C, Swift, and SwiftUI
 
 
-## Installation
-
-AppsOnAir-AppSync is available through [CocoaPods](https://cocoapods.org). To use or install AppsOnAir-AppSync with CocoaPods,
-simply add the following line to your Podfile:
-
-```ruby
-pod 'AppsOnAir-AppSync'
-```
-
 ## Requirements
 
-Minimum deployment target: 12.0
+Minimum deployment target: iOS 12.0
 
 ## Installation
 
-AppsOnAir-AppSync is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Swift Package Manager
+
+Add the package to your project using Xcode:
+
+1. Go to **File > Add Package Dependencies...**
+2. Enter the repository URL:
+   ```
+   https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git
+   ```
+3. Select the version or branch you want to use, then click **Add Package**.
+
+Or add it directly to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git", from: "1.2.1")
+]
+```
+
+Then add `"AppsOnAir-AppSync"` to your target's dependencies:
+
+```swift
+.target(
+    name: "YourTarget",
+    dependencies: ["AppsOnAir-AppSync"]
+)
+```
+
+### CocoaPods
+
+AppsOnAir-AppSync is available through [CocoaPods](https://cocoapods.org). Add the following line to your Podfile:
 
 ```ruby
 pod 'AppsOnAir-AppSync'
 ```
+
+Then run `pod install`.
+
 ## USAGE 
 Add application id in your app info.plist file.
 ```xml
