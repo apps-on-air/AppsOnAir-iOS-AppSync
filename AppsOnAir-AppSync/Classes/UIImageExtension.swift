@@ -1,4 +1,6 @@
+#if canImport(UIKit)
 import Foundation
+
 import UIKit
 
 extension UIImage {
@@ -10,3 +12,4 @@ extension UIImage {
         return UIImage(named: lastIcon)
     }
 }
+#endif
