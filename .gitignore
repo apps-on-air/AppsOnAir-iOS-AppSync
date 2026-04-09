@@ -19,6 +19,11 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+# Swift Package Manager
+.build/
+.swiftpm/
+*.resolved
+
 # CocoaPods
 *.lock
 Pods/
