@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/apps-on-air/AppsOnAir-iOS-Core.git",
-            exact: "1.2.0"
+            exact: "1.2.1"
         )
     ],
     targets: [
