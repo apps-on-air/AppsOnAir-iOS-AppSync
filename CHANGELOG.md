@@ -1,3 +1,7 @@
+## 1.3.1
+
+* Minor improvement and fixes
+
 ## 1.3.0
 
 * Added Swift Package Manager (SPM) support
