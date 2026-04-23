@@ -1,4 +1,6 @@
+#if canImport(UIKit)
 import Foundation
+
 import UIKit
 
 extension UIColor {
@@ -38,7 +40,7 @@ extension UIColor {
         }
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
-    
+
     static func colorComponent(from string: String!, start: Int, length: Int) -> CGFloat {
         let substring = (string as NSString)
             .substring(with: NSRange(location: start, length: length))
@@ -49,3 +51,4 @@ extension UIColor {
         return CGFloat(Double(hexComponent) / 255.0)
     }
 }
+#endif

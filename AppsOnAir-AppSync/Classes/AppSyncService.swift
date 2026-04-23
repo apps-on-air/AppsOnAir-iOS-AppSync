@@ -1,39 +1,40 @@
+#if canImport(UIKit)
 import Foundation
-import UIKit
-import AVFoundation
 import AppsOnAir_Core
 
+import UIKit
+import AVFoundation
 
 @objc public class AppSyncService : NSObject {
-    
+
     @objc public static let shared = AppSyncService()
-    
+
     //MARK: - Declarations
     private var window: UIWindow?
-    
+
     /// help to provide AppId from AppsOnAir-core SDK and use for Force-Update
     private var appId: String = ""
-    
+
     /// provide flags for internet connectivity
     private var isNetworkConnected: Bool? = nil
-    
+
     /// once force Update verify this flag set to true
     private var isCheckFetchUpdate:Bool = false
-    
+
     /// help to set the native UI
     private var showNativeUI: Bool?
-    
+
     /// help to initialize core service class
     let appsOnAirCoreServices = AppsOnAirCoreServices()
-    
+
     /// display message while forgot to set showNativeUI in project
     private var errorMessage:String = "AppsOnAir APIKey is Not initialized for more details: \n https://documentation.appsonair.com" // !!!: Developer Guideline URL
-    
+
     //MARK: - Methods
-    
+
     /// network status change handler
     private func networkStateChange(_ completion: @escaping (NSDictionary) -> () = { _ in }) {
-       
+
         appsOnAirCoreServices.networkStatusListenerHandler { isConnected in
             //check force-update is not verify and network is connected
             if ((!(self.isCheckFetchUpdate)) && isConnected) {
@@ -44,8 +45,8 @@ import AppsOnAir_Core
             }
         }
     }
-    
-    ///handle the  alert 
+
+    ///handle the  alert
     private func handleAlert(completion: @escaping (NSDictionary) -> () = { _ in },appUpdateInfo: NSDictionary) {
         //(appUpdateInfo.count > 0 || appUpdateInfo["error"] != nil) is for check force update data is not
         if((appUpdateInfo.count > 0 || appUpdateInfo["error"] != nil)){
@@ -56,10 +57,10 @@ import AppsOnAir_Core
             }
             // Update response for user
             var updatedAppUpdateInfo = appUpdateInfo as? [String: Any] ?? [:]
-            
+
             // update response cross the platform
             if let updateData = updatedAppUpdateInfo["updateData"] as? [String: Any] {
-                
+
                 let newUpdateData:NSDictionary = [
                     "isUpdateEnabled": updateData["isIOSUpdate"] as? Bool ?? false,
                     "buildNumber": updateData["iosBuildNumber"] as? String ?? "",
@@ -67,9 +68,9 @@ import AppsOnAir_Core
                     "updateLink": updateData["iosUpdateLink"] as? String ?? "",
                     "isForcedUpdate": updateData["isIOSForcedUpdate"] as? Bool ?? false
                 ]
-                
+
                 updatedAppUpdateInfo["updateData"] = newUpdateData
-              
+
             }
             // Pass App Update data to the user for custom UI handling
             completion(updatedAppUpdateInfo as NSDictionary)
@@ -77,7 +78,7 @@ import AppsOnAir_Core
             self.isCheckFetchUpdate = true
         }
     }
-    
+
     ///fetch the update data of app
     private func getAppUpdate(_ completion: @escaping (NSDictionary) -> () = { _ in }){
         DispatchQueue.main.async {
@@ -100,7 +101,7 @@ import AppsOnAir_Core
             }
         }
     }
-    
+
     /// help to sync and network status change handler when NativeUi set to false. by default showNativeUI value is true
     @objc public func sync(directory: NSDictionary = ["showNativeUI": true],completion: @escaping (NSDictionary) -> () = { _ in }) {
         // To initialize the network services delegate and set AppId from AppsOnAir-core SDK and set Native UI
@@ -122,22 +123,24 @@ import AppsOnAir_Core
                 completion(["error":errorMessage])
             }
         }
-      
+
     }
-    
+
     ///help to present App Update Alert
     private func presentAppUpdate(appUpdateInfo: NSDictionary) {
         if (appUpdateInfo.count > 0) {
             DispatchQueue.main.sync {
-                // FIXME: Changes for framework
-                // let bundle = Bundle(for: type(of: self))
-                // FIXME: Changes for Cross platform issue solved
+                #if SWIFT_PACKAGE
+                let bundle = Bundle.module
+                #else
+                // CocoaPods packages resources in a named .bundle
                 let bundleURL = Bundle(for: AppSyncService.self).url(forResource: "AppsOnAir-AppSync", withExtension: "bundle")
                 let bundle = Bundle(url: bundleURL ?? URL(fileURLWithPath: ""))
+                #endif
                 let storyboard = UIStoryboard(name: "AppUpdate", bundle: bundle)
                 let modalVc = storyboard.instantiateViewController(withIdentifier: "MaintenanceViewController") as! MaintenanceViewController
                 modalVc.updateDataDictionary = appUpdateInfo
-                
+
                 if let topController = UIApplication.topMostViewController(), !(topController is MaintenanceViewController) {
                     let navController = UINavigationController(rootViewController: modalVc)
                     navController.modalPresentationStyle = .overCurrentContext
@@ -149,6 +152,7 @@ import AppsOnAir_Core
                 }
             }
         }
-    
+
     }
 }
+#endif
