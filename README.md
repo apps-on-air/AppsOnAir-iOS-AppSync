@@ -32,7 +32,7 @@ Or add it directly to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git", from: "1.2.1")
+    .package(url: "https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git", from: "1.3.1")
 ]
 ```
 
