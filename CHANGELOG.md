@@ -1,3 +1,10 @@
+## 1.4.0
+
+* Added iOS 27 / Xcode 27 support
+* Raised minimum deployment target to iOS 15.0 (minimum supported by Xcode 27)
+* Requires AppsOnAir-Core 1.3.0 or later (NWPathMonitor-based network monitoring; ReachabilitySwift removed)
+* Resolve the presenting window via connected scenes instead of deprecated `keyWindow` (UIScene life cycle)
+
 ## 1.3.2
 
 * Relaxed AppsOnAir-Core dependency version constraint

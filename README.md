@@ -13,7 +13,7 @@ AppsOnAir-AppSync is an iOS CocoaPod that enforces mandatory app updates and man
 
 ## Requirements
 
-Minimum deployment target: iOS 12.0
+Minimum deployment target: iOS 15.0
 
 ## Installation
 
@@ -32,7 +32,7 @@ Or add it directly to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git", from: "1.3.2")
+    .package(url: "https://github.com/apps-on-air/AppsOnAir-iOS-AppSync.git", from: "1.4.0")
 ]
 ```
 
