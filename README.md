@@ -13,7 +13,7 @@ AppsOnAir-AppSync is an iOS CocoaPod that enforces mandatory app updates and man
 
 ## Requirements
 
-Minimum deployment target: iOS 12.0
+Minimum deployment target: iOS 15.0
 
 ## Installation
 
